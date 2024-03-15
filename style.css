@@ -61,31 +61,18 @@ tr:last-child th:last-child {
 
 
 
-@media screen and (min-width: 170px)
+@media (max-width: 500px)
 {
-    .form-group input {
-        /* font-family: 'Baloo Bhai', cursive; */
-        text-align: center;
-        display: block;
-        width: 240px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 12px auto;
-        font-size: 23px;
-        border-radius: 9px;
-    }
-
     .container {
         border: 2px solid white;
-        margin: 84px 27px;
-        padding: 15px;
-        width: 270px;
+        margin: 14px 27px;
+        padding: 12px;
+        width: 441px;
         border-radius: 52px;
         align-content: center;
         align-items: center;
     }
 }
-
 
 
 
