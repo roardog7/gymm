@@ -183,7 +183,7 @@ body {
     margin: 20px auto;
 }    
 
-@media (max-width: 500px)
+@media (max-width: 1500px)
 {
     .container {
         border: 2px solid white;
