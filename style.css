@@ -194,6 +194,41 @@ body {
         align-content: center;
         align-items: center;
     }
+
+@media (max-width: 1400px)
+{
+    .container {
+        border: 2px solid yellow;
+        margin: 14px 27px;
+        padding: 12px;
+        width: 441px;
+        border-radius: 52px;
+        align-content: center;
+        align-items: center;
+    }
+
+ @media (max-width: 1300px)
+{
+    .container {
+        border: 2px solid blue;
+        margin: 14px 27px;
+        padding: 12px;
+        width: 441px;
+        border-radius: 52px;
+        align-content: center;
+        align-items: center;
+    }
+  @media (max-width: 1081px)
+{
+    .container {
+        border: 2px solid black;
+        margin: 14px 27px;
+        padding: 12px;
+        width: 441px;
+        border-radius: 52px;
+        align-content: center;
+        align-items: center;
+    }
 }
 
 
