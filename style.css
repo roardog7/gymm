@@ -59,13 +59,14 @@ tr:last-child th:last-child {
     border-bottom-right-radius: 10px;
 }
 
-@media screen and (max-width: 800px)
+
+@media screen and (max-width: 1080px) and (min-width:980px)
 {
     .form-group input {
         /* font-family: 'Baloo Bhai', cursive; */
         text-align: center;
         display: block;
-        width: 250px;
+        width: 350px;
         padding: 1px;
         border: 2px solid black;
         margin: 12px auto;
@@ -89,14 +90,13 @@ tr:last-child th:last-child {
     }
 }
 
-
-@media screen and (max-width: 1080px) and (min-width:980px)
+@media screen and (max-width: 800px) and (min-width:500px)
 {
     .form-group input {
         /* font-family: 'Baloo Bhai', cursive; */
         text-align: center;
         display: block;
-        width: 350px;
+        width: 250px;
         padding: 1px;
         border: 2px solid black;
         margin: 12px auto;
@@ -104,3 +104,36 @@ tr:last-child th:last-child {
         border-radius: 9px;
     }
 }
+
+
+@media screen and (max-width: 500px)
+{
+    .form-group input {
+        /* font-family: 'Baloo Bhai', cursive; */
+        text-align: center;
+        display: block;
+        width: 240px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 12px auto;
+        font-size: 23px;
+        border-radius: 9px;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 84px 27px;
+        padding: 15px;
+        width: 70%;
+        border-radius: 52px;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
