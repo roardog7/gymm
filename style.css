@@ -61,6 +61,128 @@ tr:last-child th:last-child {
 
 
 
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(q1.png);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: orange;
+}
+
+.left {
+    font-family: 'Ysabeau Office', sans-serif;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.left img {
+    width: 35px;
+    filter: invert(100%);
+}
+
+.left div {
+    text-align: center;
+}
+
+.mid {
+    font-family: 'Ysabeau Office', sans-serif;
+    display: block;
+    width: 36%;
+    margin: 20px auto;
+}
+
+.right {
+    font-family: 'Ysabeau Office', sans-serif;
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 33px;
+}
+
+.navbar {
+    display: inline-block;
+    width: 700px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+
+}
+
+.btn {
+    margin: 0px 9px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    font-size: 17.5px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.left2 {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    left: 70px;
+    top: 26PX;
+}
+
+.container {
+    border: 2px solid white;
+    margin: 84px 137px;
+    padding: 15px;
+    width: 34%;
+    border-radius: 52px;
+}
+
+.form-group input {
+    /* font-family: 'Baloo Bhai', cursive; */
+    text-align: center;
+    display: block;
+    width: 430px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 12px auto;
+    font-size: 23px;
+    border-radius: 9px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    /* width: 74%; */
+    margin: 20px auto;
+}    
+
 @media (max-width: 500px)
 {
     .container {
@@ -73,6 +195,7 @@ tr:last-child th:last-child {
         align-items: center;
     }
 }
+
 
 
 
