@@ -61,7 +61,7 @@ tr:last-child th:last-child {
 
 
 
-@media screen and (max-width: 500px)
+@media screen and (min-width: 500px)
 {
     .form-group input {
         /* font-family: 'Baloo Bhai', cursive; */
