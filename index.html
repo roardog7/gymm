@@ -1,106 +1,198 @@
-input {
-    display: block;
-    width: 10vw;
-    padding: 0 1.25rem;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-input,
-input::placeholder {
-    font: 12px roboto;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu Gymkhana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="i22.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-#err {
-    background-color: black;
-}
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(q1.png);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: white;
+        color: orange;
+    }
 
+    .left {
+        font-family: 'Ysabeau Office', sans-serif;
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 40px;
+    }
 
-#er {
-    color: white;
-    font-size: 34px;
-    font-family: "Roboto";
-    padding-left: 5%;
-}
+    .left img {
+        width: 35px;
+        filter: invert(100%);
+    }
 
-#head2 {
-    color: rgb(77, 47, 47);
+    .left div {
+        text-align: center;
+    }
 
-}
+    .mid {
+        font-family: 'Ysabeau Office', sans-serif;
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+    }
 
-table {
-    margin: 5px;
-    padding: 0px;
-    border: 1px solid white;
-    border-spacing: 0px;
-    border-radius: 15px;
-}
+    .right {
+        font-family: 'Ysabeau Office', sans-serif;
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 33px;
+    }
 
-th,
-tr {
-    font-size: 30px;
-    padding-right: 35px;
-    padding-left: 35px;
-    border: 1px solid white;
+    .navbar {
+        display: inline-block;
+        width: 700px;
+    }
 
-}
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
 
-tr:first-child th:first-child {
-    border-top-left-radius: 10px;
-}
+    }
 
-tr:first-child th:last-child {
-    border-top-right-radius: 10px;
-}
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 23px;
+    }
 
-tr:last-child th:first-child {
-    border-bottom-left-radius: 10px;
-}
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
 
-tr:last-child th:last-child {
-    border-bottom-right-radius: 10px;
-}
+    }
 
-@media screen and (max-width: 800px)
-{
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(31, 31, 31);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        font-size: 17.5px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .left2 {
+        font-family: 'Josefin Sans', sans-serif;
+        position: absolute;
+        left: 70px;
+        top: 26PX;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 84px 137px;
+        padding: 15px;
+        width: 34%;
+        border-radius: 52px;
+    }
+
     .form-group input {
         /* font-family: 'Baloo Bhai', cursive; */
         text-align: center;
         display: block;
-        width: 250px;
+        width: 430px;
         padding: 1px;
         border: 2px solid black;
         margin: 12px auto;
         font-size: 23px;
         border-radius: 9px;
     }
-}
 
-@media screen and (max-width: 980px) and (min-width:800px)
-{
-    .form-group input {
-        /* font-family: 'Baloo Bhai', cursive; */
+    .container h1 {
         text-align: center;
-        display: block;
-        width: 310px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 12px auto;
-        font-size: 23px;
-        border-radius: 9px;
     }
-}
+
+    .container button {
+        display: block;
+        /* width: 74%; */
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="l2.png" alt="logo" id="logo">
+        </div>
 
 
-@media screen and (max-width: 1080px) and (min-width:980px)
-{
-    .form-group input {
-        /* font-family: 'Baloo Bhai', cursive; */
-        text-align: center;
-        display: block;
-        width: 350px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 12px auto;
-        font-size: 23px;
-        border-radius: 9px;
-    }
-}
+        <DIV class="left2">
+            <p><BIG><B>THE HINDU</B></BIG></p>
+        </DIV>
+
+
+        <div class="mid">
+            <!-- i am mid -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" style="color: black; font-weight: 1000;">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="right">
+            <!-- i am right -->
+            <button class="btn"><a href="raw.html" target="_blank" style="text-decoration: none; color: white;">Call us now</a></button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <p style="font-family: 'Arial', Courier, monospace; font-weight: 700; color: black; font-size: 25px;">Join the
+            Best Gym of Nashik Now !!</p>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
