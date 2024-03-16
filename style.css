@@ -229,6 +229,9 @@ body {
         align-content: center;
         align-items: center;
     }
+    body{
+        background-image: url(33.jpeg);
+    }
 }
 
 
