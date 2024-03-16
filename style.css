@@ -183,7 +183,7 @@ body {
     margin: 20px auto;
 }    
 
-@media (max-width: 1500px)
+@media (max-width: 1080px)
 {
     .container {
         border: 2px solid white;
@@ -195,45 +195,49 @@ body {
         align-items: center;
     }
 
-@media (max-width: 1400px)
-{
-    .container {
-        border: 2px solid yellow;
-        margin: 14px 27px;
-        padding: 12px;
-        width: 441px;
-        border-radius: 52px;
-        align-content: center;
-        align-items: center;
-    }
-
- @media (max-width: 1300px)
-{
-    .container {
-        border: 2px solid blue;
-        margin: 14px 27px;
-        padding: 12px;
-        width: 441px;
-        border-radius: 52px;
-        align-content: center;
-        align-items: center;
-    }
-  @media (max-width: 1081px)
-{
-    .container {
-        border: 2px solid black;
-        margin: 14px 27px;
-        padding: 12px;
-        width: 441px;
-        border-radius: 52px;
-        align-content: center;
-        align-items: center;
-    }
     body{
         background-image: url(33.jpeg);
     }
-}
 
+    .right{
+        top:auto;
+        bottom: 0;
+        width: auto;
+        position: unset;
+        transform: none;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 10px;
+        box-sizing: border-box;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        width: 400px;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    
+    }
+    
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 5px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    
+    }
+}
 
 
 
