@@ -1,239 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chessboard Background</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chessboard {
+    width: 600px; /* Adjust this value to resize the chessboard */
+    height: 600px; /* Adjust this value to resize the chessboard */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid #000; /* Optional: Add border for visual clarity */
+  }
+  
+  .chessboard > div {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
 <body>
+  <div class="chessboard" id="chessboard">
+  </div>
 
-<h2>Periodic Table - First 40 Elements</h2>
+  <script>
+    const chessboard = document.getElementById('chessboard');
 
-<table>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th>Atomic Number</th>
-            <th>Atomic Mass (u)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Hydrogen</td>
-            <td>1</td>
-            <td>1.008</td>
-        </tr>
-        <tr>
-            <td>Helium</td>
-            <td>2</td>
-            <td>4.0026</td>
-        </tr>
-        <tr>
-            <td>Lithium</td>
-            <td>3</td>
-            <td>6.94</td>
-        </tr>
-        <tr>
-            <td>Beryllium</td>
-            <td>4</td>
-            <td>9.0122</td>
-        </tr>
-        <tr>
-            <td>Boron</td>
-            <td>5</td>
-            <td>10.81</td>
-        </tr>
-        <tr>
-            <td>Carbon</td>
-            <td>6</td>
-            <td>12.011</td>
-        </tr>
-        <tr>
-            <td>Nitrogen</td>
-            <td>7</td>
-            <td>14.007</td>
-        </tr>
-        <tr>
-            <td>Oxygen</td>
-            <td>8</td>
-            <td>15.999</td>
-        </tr>
-        <tr>
-            <td>Fluorine</td>
-            <td>9</td>
-            <td>18.998</td>
-        </tr>
-        <tr>
-            <td>Neon</td>
-            <td>10</td>
-            <td>20.180</td>
-        </tr>
-        <tr>
-            <td>Sodium</td>
-            <td>11</td>
-            <td>22.990</td>
-        </tr>
-        <tr>
-            <td>Magnesium</td>
-            <td>12</td>
-            <td>24.305</td>
-        </tr>
-        <tr>
-            <td>Aluminum</td>
-            <td>13</td>
-            <td>26.982</td>
-        </tr>
-        <tr>
-            <td>Silicon</td>
-            <td>14</td>
-            <td>28.085</td>
-        </tr>
-        <tr>
-            <td>Phosphorus</td>
-            <td>15</td>
-            <td>30.974</td>
-        </tr>
-        <tr>
-            <td>Sulfur</td>
-            <td>16</td>
-            <td>32.06</td>
-        </tr>
-        <tr>
-            <td>Chlorine</td>
-            <td>17</td>
-            <td>35.45</td>
-        </tr>
-        <tr>
-            <td>Argon</td>
-            <td>18</td>
-            <td>39.948</td>
-        </tr>
-        <tr>
-            <td>Potassium</td>
-            <td>19</td>
-            <td>39.098</td>
-        </tr>
-        <tr>
-            <td>Calcium</td>
-            <td>20</td>
-            <td>40.078</td>
-        </tr>
-        <tr>
-            <td>Scandium</td>
-            <td>21</td>
-            <td>44.956</td>
-        </tr>
-        <tr>
-            <td>Titanium</td>
-            <td>22</td>
-            <td>47.867</td>
-        </tr>
-        <tr>
-            <td>Vanadium</td>
-            <td>23</td>
-            <td>50.942</td>
-        </tr>
-        <tr>
-            <td>Chromium</td>
-            <td>24</td>
-            <td>51.996</td>
-        </tr>
-        <tr>
-            <td>Manganese</td>
-            <td>25</td>
-            <td>54.938</td>
-        </tr>
-        <tr>
-            <td>Iron</td>
-            <td>26</td>
-            <td>55.845</td>
-        </tr>
-        <tr>
-            <td>Cobalt</td>
-            <td>27</td>
-            <td>58.933</td>
-        </tr>
-        <tr>
-            <td>Nickel</td>
-            <td>28</td>
-            <td>58.693</td>
-        </tr>
-        <tr>
-            <td>Copper</td>
-            <td>29</td>
-            <td>63.546</td>
-        </tr>
-        <tr>
-            <td>Zinc</td>
-            <td>30</td>
-            <td>65.38</td>
-        </tr>
-        <tr>
-            <td>Gallium</td>
-            <td>31</td>
-            <td>69.723</td>
-        </tr>
-        <tr>
-            <td>Germanium</td>
-            <td>32</td>
-            <td>72.63</td>
-        </tr>
-        <tr>
-            <td>Arsenic</td>
-            <td>33</td>
-            <td>74.922</td>
-        </tr>
-        <tr>
-            <td>Selenium</td>
-            <td>34</td>
-            <td>78.971</td>
-        </tr>
-        <tr>
-            <td>Bromine</td>
-            <td>35</td>
-            <td>79.904</td>
-        </tr>
-        <tr>
-            <td>Krypton</td>
-            <td>36</td>
-            <td>83.798</td>
-        </tr>
-        <tr>
-            <td>Rubidium</td>
-            <td>37</td>
-            <td>85.468</td>
-        </tr>
-        <tr>
-            <td>Strontium</td>
-            <td>38</td>
-            <td>87.62</td>
-        </tr>
-        <tr>
-            <td>Yttrium</td>
-            <td>39</td>
-            <td>88.906</td>
-        </tr>
-        <tr>
-            <td>Zirconium</td>
-            <td>40</td>
-            <td>91.224</td>
-        </tr>
-    </tbody>
-</table>
-
+    for (let row = 0; row < 8; row++) {
+      for (let col = 0; col < 8; col++) {
+        const square = document.createElement('div');
+        if ((row + col) % 2 === 0) {
+          square.style.backgroundColor = 'white';
+        } else {
+          square.style.backgroundColor = 'black';
+        }
+        chessboard.appendChild(square);
+      }
+    }
+  </script>
 </body>
 </html>
